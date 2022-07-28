@@ -30,6 +30,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Substitute URLs
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+           find: "ccc"
+           replace: "CCC"
+           regex: false     
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
