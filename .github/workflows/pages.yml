@@ -33,8 +33,8 @@ jobs:
       - name: Substitute URLs
         uses: jacobtomlinson/gha-find-replace@v2
         with:
-           find: "ccc"
-           replace: "CCC"
+           find: "http://localhost:8000"
+           replace: "https://kurmasGVSU.github.io"
            regex: false     
       - name: Setup Pages
         uses: actions/configure-pages@v1
